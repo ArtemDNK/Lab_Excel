@@ -94,7 +94,7 @@ begin
       x:=x+st;
       row:=row+1;
     end;
-  while (x>=xb) and (X<=xe) and not (x>=1) and not (x<=0) do
+  while (x>=xb) and (X<=xe) and not ((x>=1) and (x<=0)) do
     begin
       y1:=1;
       Sheet.Range[col+IntToStr(row), col+IntToStr(row)].Value[xlRangeValueDefault]:=y1;
